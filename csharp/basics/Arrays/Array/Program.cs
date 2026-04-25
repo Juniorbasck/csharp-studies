@@ -7,12 +7,12 @@
 		int first = nums[0];
 		int last = nums[nums.Length - 1]; // - 1 para evitar IndexOutOfRangeException!
 
-		for (int i = 0; i < nums.Length; i++)
+		for (int i = 0; i < nums.Length; i++) // percorrer no começo para o final
 		{
 			Console.Write(nums[i]);
 		}
 		
-		for(int i = nums.Length - 1; i >= 0; i--)
+		for(int i = nums.Length - 1; i >= 0; i--) // do final para o começo 
 		{
 			Console.Write(nums[i]);
 		}
@@ -20,7 +20,7 @@
 		//Quando o indice não importa, apenas o valor
 		foreach (var num in nums)
 		{
-			Console.Write(num);
+			// Console.Write(num);
 		}
 		
 		//Orderna o array IN-Place (modificando o array original) complexidade: 0(N log N)
@@ -31,10 +31,18 @@
 		
 		//Preenchetodo o array com um valor específico (Útil para zerar arrays de visitados). Complexidade: O(N)
 		Array.Fill(nums, -1);
+		
+		//lista generica
+		List<object> listaMista = new List<object>();
+		
+		// Fill(nums);
+		
 	}
 	
 	public static void Fill(int[] nums)
 	{
 		Array.Fill(nums, -1);
+		
+		Console.WriteLine(string.Join(", ", nums));
 	}
 }
