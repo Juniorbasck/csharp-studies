@@ -1,4 +1,6 @@
-﻿public class Program{
+﻿using System.Collections;
+
+public class Program{
 	public static void Main(string[] args){
 		
 		int[] nums = new [] {1 ,2,3,4,5};
@@ -33,7 +35,7 @@
 		Array.Fill(nums, -1);
 		
 		//lista generica
-		List<object> listaMista = new List<object>();
+		ArrayList arrayLegado = new ArrayList();
 		
 		// Fill(nums);
 		
