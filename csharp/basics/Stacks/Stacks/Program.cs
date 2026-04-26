@@ -14,7 +14,7 @@
         
         int remove =  stack.Pop();
         
-        Console.WriteLine(removde);
+        Console.WriteLine(remove);
 
 
         while (stack.Count > 0)
