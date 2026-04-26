@@ -16,7 +16,5 @@
         
         // 3. DEQUEUE: Remove e retorna quem está na frente
         int remove = queue.Dequeue();
-        
-
     }
 }
